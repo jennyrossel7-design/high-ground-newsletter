@@ -6,6 +6,14 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="theme-color" content="#2A3328">
 <title>High Ground · Issue 003 · April 12, 2026</title>
+<meta name="description" content="Reading the Contract Trail — SBIR to STRATFI to OTA to IDIQ. How to track a company's journey through government validation.">
+<meta property="og:title" content="High Ground · Issue 003 · April 12, 2026">
+<meta property="og:description" content="Reading the Contract Trail — SBIR to STRATFI to OTA to IDIQ. How to track a company's journey through government validation.">
+<meta property="og:image" content="https://highground.intervallogroup.com/issue-003/cover.png">
+<meta property="og:url" content="https://highground.intervallogroup.com/issue-003/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://highground.intervallogroup.com/issue-003/cover.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -714,6 +722,60 @@
 
     .raise-table .hide-mobile {
       display: none;
+    }
+
+    /* Stack table as cards on mobile */
+    .raise-table-wrap {
+      overflow-x: visible;
+    }
+
+    .raise-table,
+    .raise-table thead,
+    .raise-table tbody,
+    .raise-table th,
+    .raise-table td,
+    .raise-table tr {
+      display: block;
+      width: 100%;
+    }
+
+    .raise-table thead {
+      display: none;
+    }
+
+    .raise-table tbody tr {
+      border-bottom: 1px solid var(--linen);
+      padding: 20px 0;
+    }
+
+    .raise-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .raise-table tr.alt-row td {
+      background: transparent;
+      padding-left: 0;
+    }
+
+    .raise-table td {
+      padding: 4px 0;
+      border-bottom: none;
+      white-space: normal;
+    }
+
+    .raise-table td.hide-mobile {
+      display: none;
+    }
+
+    .amount-cell {
+      font-size: 26px;
+      white-space: normal;
+    }
+
+    .note-cell {
+      font-size: 14px;
+      margin-top: 6px;
+      line-height: 1.6;
     }
   }
 
