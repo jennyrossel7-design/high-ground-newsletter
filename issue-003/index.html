@@ -131,17 +131,17 @@
     flex-wrap: wrap;
   }
 
-  .masthead-nav span {
+  .masthead-nav a {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--driftwood);
-    cursor: pointer;
+    text-decoration: none;
     transition: color 0.2s;
   }
 
-  .masthead-nav span:hover { color: var(--stone); }
+  .masthead-nav a:hover { color: var(--stone); }
 
   /* ── BRIEF HEADER ── */
   .brief-header {
@@ -823,17 +823,17 @@
       </div>
     </div>
     <nav class="masthead-nav">
-      <span>The Brief</span>
-      <span>Raise</span>
-      <span>Scan</span>
-      <span>Build</span>
-      <span>Position</span>
+      <a href="#brief">The Brief</a>
+      <a href="#raise">Raise</a>
+      <a href="#scan">Scan</a>
+      <a href="#build">Build</a>
+      <a href="#position">Position</a>
     </nav>
   </div>
 </header>
 
 <!-- ════════════════════════════════ BRIEF HEADER -->
-<section class="brief-header">
+<section id="brief" class="brief-header">
   <div class="brief-header-inner">
     <div class="section-tag">The Brief</div>
     <h1 class="brief-headline">The Back Door to the Pentagon</h1>
@@ -872,7 +872,7 @@
 </div>
 
 <!-- ════════════════════════════════ RAISE -->
-<section class="raise-section">
+<section id="raise" class="raise-section">
   <div class="raise-section-inner">
     <div class="divider" style="margin-top:0; padding-top:40px;">
       <span class="divider-label">Raise</span>
@@ -948,7 +948,7 @@
 </section>
 
 <!-- ════════════════════════════════ SCAN + SIDEBAR -->
-<div class="body-wrap">
+<div id="scan" class="body-wrap">
   <div class="body-inner">
 
     <!-- MAIN / SCAN -->
@@ -959,8 +959,8 @@
       </div>
 
       <article class="scan-item">
-        <h2 class="scan-headline">K2 Space fires the most powerful electric thruster ever flown</h2>
-        <p class="scan-body">K2 Space's GRAVITAS satellite — a 2-metric-ton, 40-meter wingspan spacecraft carrying 12 classified DoD and commercial payloads — launched on a SpaceX Falcon 9 in late March and has now completed its first in-space demonstration, including a successful test firing of a 20 kW Hall-effect thruster. That's the most powerful electric propulsion system ever flown. The mission's next objective is using that thruster to raise the spacecraft from LEO to MEO over the next 90 days — a maneuver that would validate low-thrust orbit-raising as a viable architecture for persistent, high-power platforms at higher orbits. K2 received its $60M STRATFI award from SpaceWERX in December 2024. <strong>This is what a STRATFI bet paying off on orbit looks like.</strong></p>
+        <h2 class="scan-headline">K2 Space completes in-space demonstration</h2>
+        <p class="scan-body">K2 Space's GRAVITAS satellite — a 2-metric-ton, 40-meter wingspan spacecraft carrying 12 classified DoD and commercial payloads — launched on a SpaceX Falcon 9 in late March and has now completed its first in-space demonstration. The mission's next objective is using that thruster to raise the spacecraft from LEO to MEO over the next 90 days — a maneuver that would validate low-thrust orbit-raising as a viable architecture for persistent, high-power platforms at higher orbits. They also completed a successful test firing of a 20 kW Hall-effect thruster - which will be the most powerful electric propulsion system ever flown. K2 received its $60M STRATFI award from SpaceWERX in December 2024. <strong>This is what a STRATFI bet paying off on orbit looks like.</strong></p>
       </article>
 
       <article class="scan-item">
@@ -1044,7 +1044,7 @@
 </div>
 
 <!-- ════════════════════════════════ BUILD -->
-<section class="build-section">
+<section id="build" class="build-section">
   <div class="build-inner">
     <div class="build-header">
       <div class="section-tag" style="margin-bottom:0; color:var(--copper);">Build</div>
@@ -1087,7 +1087,7 @@
 </section>
 
 <!-- ════════════════════════════════ POSITION -->
-<section class="position-section">
+<section id="position" class="position-section">
   <div class="position-inner">
     <div class="section-tag" style="color:var(--copper); margin-bottom:28px;">Position</div>
     <p class="position-body">The pitch deck is where a company shows you its best case. The SAM.gov record, the cap table, the reference check, the SBIR phase transition history — those are where you build your own view. Most great companies look uncertain in the middle. The ones that clear rigorous due diligence and earn a high rating are showing the qualitative indicators of future success. <strong>The gap in defense acquisition has never been technology. It's been the analytical infrastructure to evaluate it with the same rigor the private market applies to any high-stakes investment. That infrastructure is being built, one diligenced company at a time.</strong></p>
