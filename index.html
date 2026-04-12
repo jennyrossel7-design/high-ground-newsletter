@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#2A3328">
+<title>High Ground · Defense × Space × Capital Markets</title>
+<meta name="description" content="High Ground translates private capital markets intelligence into acquisition-relevant insight for defense professionals. Defense. Space. Capital. One perspective.">
+<meta property="og:title" content="High Ground · Defense × Space × Capital Markets">
+<meta property="og:description" content="Defense. Space. Capital. One perspective. Weekly intelligence briefings by Jennifer Ross, CEO of InterVallo LLC.">
+<meta property="og:image" content="https://highground.intervallogroup.com/issue-003/cover.png">
+<meta property="og:url" content="https://highground.intervallogroup.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://highground.intervallogroup.com/issue-003/cover.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sand: #F2EDE4;
+    --linen: #EAE3D8;
+    --stone: #C9BFB0;
+    --driftwood: #8C7B6B;
+    --kelp: #3D4A3E;
+    --deep-kelp: #2A3328;
+    --horizon: #4A6070;
+    --copper: #A0714F;
+    --warm-white: #F8F5F0;
+    --ink: #1C1C1C;
+    --mid: #6B6259;
+    --content-max: 1600px;
+  }
+
+  html { font-size: 18px; overflow-x: hidden; }
+
+  body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-weight: 300;
+    background: var(--deep-kelp);
+    color: var(--ink);
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: var(--deep-kelp);
+    padding: 48px clamp(20px, 6vw, 100px) 36px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 85% 10%, rgba(74,96,112,0.4) 0%, transparent 55%),
+      radial-gradient(ellipse 40% 60% at 5% 100%, rgba(160,113,79,0.12) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .masthead-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .masthead-avatar {
+    width: clamp(80px, 10vw, 140px);
+    height: clamp(80px, 10vw, 140px);
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+    border: 2px solid rgba(160,113,79,0.5);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    .masthead-avatar { display: none; }
+  }
+
+  .brand-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 300;
+    color: var(--warm-white);
+    line-height: 1;
+    letter-spacing: 0.01em;
+  }
+
+  .brand-tagline {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-top: 10px;
+    font-family: 'DM Mono', 'Courier New', monospace;
+  }
+
+.masthead-nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .masthead-nav span {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+  }
+
+  /* ── ABOUT STRIP ── */
+  .about-strip {
+    background: var(--kelp);
+    padding: clamp(36px, 4vw, 56px) clamp(20px, 6vw, 100px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .about-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 16px;
+  }
+
+  .about-text {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 300;
+    font-style: italic;
+    color: var(--stone);
+    line-height: 1.65;
+  }
+
+  .about-text strong {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--warm-white);
+  }
+
+  .about-byline {
+    margin-top: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+  }
+
+  /* ── ARCHIVE BODY ── */
+  .archive-body {
+    background: var(--sand);
+    padding: clamp(48px, 6vw, 80px) clamp(20px, 6vw, 100px);
+  }
+
+  .archive-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .archive-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--linen);
+  }
+
+  .issue-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .issue-card {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--linen);
+    text-decoration: none;
+    color: inherit;
+    transition: padding-left 0.15s;
+  }
+
+  .issue-card.has-thumb {
+    grid-template-columns: 90px 1fr 120px auto;
+  }
+
+  .issue-thumb {
+    width: 120px;
+    height: 68px;
+    object-fit: cover;
+    border-radius: 3px;
+    display: block;
+    opacity: 0.88;
+  }
+
+  .issue-card:first-child {
+    border-top: 1px solid var(--linen);
+  }
+
+  .issue-card:hover {
+    padding-left: 8px;
+  }
+
+  .issue-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--copper);
+    white-space: nowrap;
+  }
+
+  .issue-meta-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .issue-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(20px, 2.2vw, 26px);
+    font-weight: 500;
+    color: var(--deep-kelp);
+    line-height: 1.2;
+  }
+
+  .issue-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.55;
+  }
+
+  .issue-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--driftwood);
+    white-space: nowrap;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  /* coming soon */
+  .issue-card.coming-soon {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .coming-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--linen);
+    color: var(--driftwood);
+    padding: 3px 8px;
+    border-radius: 2px;
+  }
+
+  /* ── CONTACT STRIP ── */
+  .contact-strip {
+    background: var(--deep-kelp);
+    padding: clamp(40px, 5vw, 64px) clamp(20px, 6vw, 100px);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    text-align: center;
+  }
+
+  .contact-inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 16px;
+  }
+
+  .contact-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 300;
+    color: var(--warm-white);
+    margin-bottom: 12px;
+    line-height: 1.15;
+  }
+
+  .contact-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--stone);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .contact-email {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: var(--copper);
+  }
+
+  .contact-email a {
+    color: var(--copper);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(160,113,79,0.4);
+    transition: border-color 0.2s;
+  }
+
+  .contact-email a:hover {
+    border-bottom-color: var(--copper);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: #1a1f1a;
+    padding: 20px clamp(20px, 6vw, 100px);
+    text-align: center;
+  }
+
+  .footer p {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.2);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 640px) {
+    .masthead-top { flex-direction: column; gap: 16px; }
+    .issue-card,
+    .issue-card.has-thumb { grid-template-columns: 60px 1fr; gap: 16px; }
+    .issue-date { display: none; }
+    .issue-thumb { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <div>
+        <div class="brand-name">High Ground</div>
+        <div class="brand-tagline">Defense. Space. Capital. One perspective.</div>
+      </div>
+      <img class="masthead-avatar" src="jennifer-avatar.png" alt="Jennifer Ross">
+    </div>
+    <div class="masthead-nav">
+      <span>All Issues</span>
+      <span>About</span>
+      <span>Contact</span>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="about-strip">
+  <div class="about-inner">
+    <div class="section-tag">About This Newsletter</div>
+    <p class="about-text">
+      <strong>High Ground</strong> translates private capital markets intelligence into actionable insight for space investors, aerospace and defense industry professionals, and acquisition practitioners. Written by <strong>Jennifer Ross</strong> — CEO of InterVallo LLC and USSF COMSO advisor — who brings a short-seller's forensic discipline to evaluating the commercial space companies shaping the defense industrial base.
+    </p>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="archive-body">
+  <div class="archive-inner">
+    <div class="archive-label">All Issues</div>
+
+    <div class="issue-list">
+
+      <a class="issue-card has-thumb" href="issue-003/">
+        <div class="issue-num">Issue 003</div>
+        <div class="issue-meta-block">
+          <div class="issue-title">The Back Door to the Pentagon</div>
+          <div class="issue-desc">The U.S. doesn't have a space capability problem — it has a capital-translation problem. How a short-seller's forensic discipline applies to defense acquisition, and what the FCL framework actually looks for before a company gets to STRATFI.</div>
+        </div>
+        <img class="issue-thumb" src="cover-003.png" alt="High Ground Issue 003 cover">
+        <div class="issue-date">Apr 12, 2026</div>
+      </a>
+
+      <div class="issue-card coming-soon">
+        <div class="issue-num">Issue 002</div>
+        <div class="issue-meta-block">
+          <div class="issue-title">Archive Coming Soon</div>
+          <div class="issue-desc">Previous issues will be added to the archive.</div>
+        </div>
+        <div class="issue-date"><span class="coming-badge">Earlier</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-strip">
+  <div class="contact-inner">
+    <div class="contact-tag">Stay Current</div>
+    <h2 class="contact-heading">New issues published weekly</h2>
+    <p class="contact-sub">To be added to the distribution list, visit <a href="https://www.intervallogroup.com" style="color: var(--stone); border-bottom: 1px solid rgba(201,191,176,0.4);">www.intervallogroup.com</a>.</p>
+    <p class="contact-email"><a href="mailto:jen@intervallogroup.com">jen@intervallogroup.com</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>High Ground · InterVallo LLC · &copy; 2026 · All rights reserved</p>
+</footer>
+
+</body>
+</html>
