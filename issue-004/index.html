@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#2A3328">
+<title>High Ground · Issue 004 · April 17, 2026</title>
+<meta name="description" content="The SPACs Are Back. Read Them Harder This Time. Plus: Turion, Starfish, and Citra close rounds in a single week; HawkEye 360 files; Arxis pops 38%.">
+<meta property="og:title" content="High Ground · Issue 004 · April 17, 2026">
+<meta property="og:description" content="The SPACs Are Back. Read Them Harder This Time. Plus: Turion, Starfish, and Citra close rounds in a single week; HawkEye 360 files; Arxis pops 38%.">
+<meta property="og:image" content="https://highground.intervallogroup.com/issue-004/cover.png">
+<meta property="og:url" content="https://highground.intervallogroup.com/issue-004/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://highground.intervallogroup.com/issue-004/cover.png">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sand: #F2EDE4;
+    --linen: #EAE3D8;
+    --stone: #C9BFB0;
+    --driftwood: #8C7B6B;
+    --kelp: #3D4A3E;
+    --deep-kelp: #2A3328;
+    --horizon: #4A6070;
+    --copper: #A0714F;
+    --warm-white: #F8F5F0;
+    --ink: #1C1C1C;
+    --mid: #6B6259;
+    --content-max: 1600px;
+    --col-main: 65%;
+    --col-side: 35%;
+  }
+
+  html { font-size: 18px; }
+
+  html { overflow-x: hidden; }
+
+  body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-weight: 300;
+    background: var(--deep-kelp);
+    color: var(--ink);
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: var(--deep-kelp);
+    padding: 48px clamp(20px, 6vw, 100px) 36px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .masthead::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 85% 10%, rgba(74,96,112,0.4) 0%, transparent 55%),
+      radial-gradient(ellipse 40% 60% at 5% 100%, rgba(160,113,79,0.12) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .masthead-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .brand-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 300;
+    color: var(--warm-white);
+    line-height: 1;
+    letter-spacing: 0.01em;
+  }
+
+  .brand-tagline {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-top: 10px;
+    font-family: 'DM Mono', 'Courier New', monospace;
+  }
+
+  .issue-meta {
+    text-align: right;
+  }
+
+  .issue-meta p {
+    font-family: 'DM Mono', 'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+    line-height: 2;
+  }
+
+  .week-tag {
+    display: inline-block;
+    background: var(--copper);
+    color: var(--warm-white);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    margin-top: 10px;
+  }
+
+  .masthead-nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .masthead-nav a {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .masthead-nav a:hover { color: var(--stone); }
+
+  /* ── BRIEF HEADER ── */
+  .brief-header {
+    background: var(--deep-kelp);
+    padding: 0 clamp(20px, 6vw, 100px) 56px;
+  }
+
+  .brief-header-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  .section-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .section-tag::after {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: var(--copper);
+    opacity: 0.5;
+  }
+
+  .brief-headline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(40px, 5vw, 72px);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--warm-white);
+    margin-bottom: 28px;
+    max-width: 900px;
+  }
+
+  .brief-deck {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--stone);
+    max-width: 760px;
+    border-left: 3px solid var(--copper);
+    padding-left: 24px;
+  }
+
+  /* ── COPPER RULE ── */
+  .copper-rule {
+    height: 3px;
+    background: var(--copper);
+  }
+
+  /* ── BRIEF BODY ── */
+  .body-wrap-brief {
+    background: var(--warm-white);
+  }
+
+  .body-inner-brief {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 56px clamp(20px, 6vw, 100px) 40px;
+  }
+
+  .body-inner-brief .brief-body {
+    max-width: 820px;
+  }
+
+  .body-inner-brief .callout {
+    max-width: 820px;
+  }
+
+  /* Prevent long tokens (de-SPAC'd, SPAC-able, 10-K) from overflowing */
+  .brief-body p, .callout p, .brief-headline, .brief-deck {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* ── BODY (SCAN + SIDEBAR) ── */
+  .body-wrap {
+    background: var(--warm-white);
+  }
+
+  .body-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: var(--col-main) var(--col-side);
+  }
+
+  /* ── MAIN COLUMN ── */
+  .main-col {
+    padding: 56px clamp(16px, 4vw, 64px) 56px clamp(20px, 6vw, 100px);
+    border-right: 1px solid var(--linen);
+  }
+
+  .byline {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .byline::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--copper);
+  }
+
+  .brief-body p {
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--mid);
+    margin-bottom: 20px;
+  }
+
+  .brief-body p:last-child { margin-bottom: 0; }
+  .brief-body p strong { color: var(--deep-kelp); font-weight: 500; }
+
+  .callout {
+    background: var(--linen);
+    border-left: 4px solid var(--copper);
+    padding: 22px 28px;
+    margin: 32px 0;
+  }
+
+  .callout-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 10px;
+  }
+
+  .callout p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--mid);
+    margin: 0;
+  }
+
+  .callout p strong { color: var(--deep-kelp); font-weight: 500; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 48px 0 28px;
+  }
+
+  .divider:first-child { margin-top: 0; }
+
+  .divider-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--copper);
+    white-space: nowrap;
+  }
+
+  .divider-line {
+    flex: 1;
+    height: 1px;
+    background: var(--linen);
+  }
+
+  /* ── RAISE SECTION ── */
+  .raise-section {
+    background: var(--warm-white);
+    padding: 0 clamp(20px, 6vw, 100px) 56px;
+    border-bottom: 1px solid var(--linen);
+  }
+
+  .raise-section-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  .raise-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .raise-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .raise-table th {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--deep-kelp);
+    font-weight: 400;
+  }
+
+  .raise-table td {
+    padding: 16px 14px 16px 0;
+    border-bottom: 1px solid var(--linen);
+    vertical-align: top;
+  }
+
+  .raise-table tr:last-child td { border-bottom: none; }
+
+  .raise-table tr.alt-row td { background: var(--sand); padding-left: 8px; }
+
+  .company-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--deep-kelp);
+    line-height: 1.2;
+  }
+
+  .company-sub {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--copper);
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  .round-cell {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--mid);
+    white-space: nowrap;
+  }
+
+  .amount-cell {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--deep-kelp);
+    white-space: nowrap;
+  }
+
+  .note-cell {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--mid);
+  }
+
+  /* ── SCAN ITEMS ── */
+  .scan-item {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--linen);
+  }
+
+  .scan-item:last-child { border-bottom: none; }
+
+  .scan-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--deep-kelp);
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .scan-body {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--mid);
+  }
+
+  .scan-body strong { color: var(--deep-kelp); font-weight: 500; }
+
+  /* ── SIDEBAR ── */
+  .side-col {
+    padding: 56px clamp(20px, 6vw, 100px) 56px clamp(16px, 3vw, 48px);
+  }
+
+  .side-widget {
+    margin-bottom: 44px;
+  }
+
+  .side-widget:last-child { margin-bottom: 0; }
+
+  .side-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .side-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--linen);
+  }
+
+  /* Market Pulse grid */
+  .pulse-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .pulse-tile {
+    background: var(--deep-kelp);
+    padding: 16px 14px 14px;
+    text-align: center;
+  }
+
+  .pulse-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 300;
+    color: var(--warm-white);
+    line-height: 1;
+    display: block;
+  }
+
+  .pulse-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--stone);
+    display: block;
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+
+  /* Capital Angle */
+  .capital-angle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.55;
+    color: var(--copper);
+    border-left: 2px solid var(--linen);
+    padding-left: 18px;
+  }
+
+  /* IPO Watch */
+  .ipo-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--linen);
+  }
+
+  .ipo-item:last-child { border-bottom: none; }
+
+  .ipo-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--deep-kelp);
+    margin-bottom: 4px;
+  }
+
+  .ipo-status {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--driftwood);
+  }
+
+  /* ── MECHANICS PRIMER ── */
+  .mechanics-section {
+    background: var(--sand);
+    padding: 0 clamp(20px, 6vw, 100px) 64px;
+    border-bottom: 1px solid var(--linen);
+  }
+
+  .mechanics-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  .mechanics-intro {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--deep-kelp);
+    max-width: 820px;
+    margin-bottom: 36px;
+  }
+
+  .mechanics-intro strong {
+    font-weight: 400;
+  }
+
+  .mechanics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--linen);
+    border-top: 2px solid var(--copper);
+  }
+
+  .mechanics-card {
+    background: var(--warm-white);
+    padding: 24px 26px;
+  }
+
+  .mechanics-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 12px;
+  }
+
+  .mechanics-card p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--mid);
+  }
+
+  .mechanics-card p em {
+    font-style: italic;
+    color: var(--deep-kelp);
+  }
+
+  /* ── BUILD SECTION ── */
+  .build-section {
+    background: var(--deep-kelp);
+    padding: 64px clamp(20px, 6vw, 100px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .build-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 50% 70% at 95% 100%, rgba(160,113,79,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .build-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .build-header {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 44px;
+  }
+
+  .build-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 300;
+    color: var(--warm-white);
+    line-height: 1.15;
+  }
+
+  .build-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--driftwood);
+    white-space: normal;
+  }
+
+  .build-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  .build-card {
+    background: rgba(255,255,255,0.03);
+    border-top: 2px solid var(--copper);
+    padding: 28px 24px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 16px;
+    opacity: 0.8;
+  }
+
+  .card-headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--warm-white);
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .card-body {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--stone);
+    flex: 1;
+  }
+
+  .card-body strong { color: var(--warm-white); font-weight: 400; }
+
+  .card-takeaway {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--copper);
+    line-height: 1.6;
+  }
+
+  /* ── POSITION SECTION ── */
+  .position-section {
+    background: var(--deep-kelp);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 56px clamp(20px, 6vw, 100px);
+  }
+
+  .position-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  .position-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--stone);
+    max-width: 820px;
+  }
+
+  .position-body strong {
+    color: var(--warm-white);
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--deep-kelp);
+    border-top: 3px solid var(--copper);
+    padding: 40px clamp(20px, 6vw, 100px);
+  }
+
+  .footer-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--warm-white);
+    letter-spacing: 0.02em;
+  }
+
+  .footer-meta {
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--driftwood);
+    line-height: 2;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    :root {
+      --col-main: 60%;
+      --col-side: 40%;
+    }
+
+    .build-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mechanics-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 960px) {
+    :root {
+      --col-main: 58%;
+      --col-side: 42%;
+    }
+
+    .build-header {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .body-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .main-col {
+      border-right: none;
+      border-bottom: 1px solid var(--linen);
+      padding: 40px clamp(16px, 5vw, 40px);
+    }
+
+    .side-col {
+      padding: 40px clamp(16px, 5vw, 40px);
+    }
+
+    /* Harmonize Brief padding with Scan/Sidebar on mobile */
+    .body-inner-brief {
+      padding: 40px clamp(16px, 5vw, 40px);
+    }
+
+    .brief-header {
+      padding: 0 clamp(16px, 5vw, 40px) 40px;
+    }
+
+    .mechanics-section {
+      padding: 0 clamp(16px, 5vw, 40px) 48px;
+    }
+
+    .mechanics-intro {
+      font-size: 20px;
+      margin-bottom: 28px;
+    }
+
+    .callout {
+      padding: 20px 22px;
+      margin: 24px 0;
+    }
+
+    .raise-table .hide-mobile {
+      display: none;
+    }
+
+    /* Stack table as cards on mobile */
+    .raise-table-wrap {
+      overflow-x: visible;
+    }
+
+    .raise-table,
+    .raise-table thead,
+    .raise-table tbody,
+    .raise-table th,
+    .raise-table td,
+    .raise-table tr {
+      display: block;
+      width: 100%;
+    }
+
+    .raise-table thead {
+      display: none;
+    }
+
+    .raise-table tbody tr {
+      border-bottom: 1px solid var(--linen);
+      padding: 20px 0;
+    }
+
+    .raise-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .raise-table tr.alt-row td {
+      background: transparent;
+      padding-left: 0;
+    }
+
+    .raise-table td {
+      padding: 4px 0;
+      border-bottom: none;
+      white-space: normal;
+    }
+
+    .raise-table td.hide-mobile {
+      display: none;
+    }
+
+    .amount-cell {
+      font-size: 26px;
+      white-space: normal;
+    }
+
+    .note-cell {
+      font-size: 14px;
+      margin-top: 6px;
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .build-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .mechanics-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .masthead-top {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .issue-meta { text-align: left; }
+  }
+
+  @media (max-width: 480px) {
+    html { font-size: 15px; }
+
+    .mechanics-intro {
+      font-size: 18px;
+    }
+
+    .mechanics-card {
+      padding: 20px 20px;
+    }
+
+    .raise-table .hide-small {
+      display: none;
+    }
+
+    /* Brief — tighter margins + right-size type on small phones */
+    .body-inner-brief {
+      padding: 32px clamp(14px, 5vw, 28px);
+    }
+
+    .brief-header {
+      padding: 0 clamp(14px, 5vw, 28px) 32px;
+    }
+
+    .brief-headline {
+      font-size: clamp(32px, 9vw, 44px);
+    }
+
+    .brief-deck {
+      font-size: 17px;
+      padding-left: 18px;
+    }
+
+    .brief-body p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .callout {
+      padding: 18px 20px;
+    }
+
+    .callout p {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+  }
+
+  @media (max-width: 360px) {
+    html { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════ MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-top">
+      <div>
+        <div class="brand-name">High Ground</div>
+        <div class="brand-tagline">Defense · Space · Capital Markets</div>
+        <div class="week-tag">The Public-Market Turn</div>
+      </div>
+      <div class="issue-meta">
+        <p>Issue 004</p>
+        <p>April 17, 2026</p>
+        <p>InterVallo LLC</p>
+      </div>
+    </div>
+    <nav class="masthead-nav">
+      <a href="#brief">The Brief</a>
+      <a href="#mechanics">Mechanics</a>
+      <a href="#raise">Raise</a>
+      <a href="#scan">Scan</a>
+      <a href="#build">Build</a>
+      <a href="#position">Position</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════════════════════════ BRIEF HEADER -->
+<section id="brief" class="brief-header">
+  <div class="brief-header-inner">
+    <div class="section-tag">The Brief</div>
+    <h1 class="brief-headline">The SPACs Are Back. Read Them Harder This Time.</h1>
+    <p class="brief-deck">A space-focused SPAC listed on Nasdaq in January with roughly $230 million in trust and a 24-month clock. It is not alone. Good companies do traditional IPOs. The ones choosing SPACs are telling you something about the path they declined.</p>
+  </div>
+</section>
+
+<div class="copper-rule"></div>
+
+<!-- ════════════════════════════════ BRIEF BODY -->
+<div class="body-wrap-brief">
+  <div class="body-inner-brief">
+    <div class="brief-body">
+      <p>Space Asset Acquisition Corp. listed on Nasdaq in January 2026 with roughly $230 million in trust. The sponsor is Raphael Roettgen, an ex-investment banker who abandoned a space-focused SPAC in 2022 when the blank-check market for space collapsed. He is back. He is not the only one. A lot of us wrote the space SPAC off two years ago as structurally broken. It is structurally unchanged. It is also reappearing.</p>
+
+      <p>There is a real change in the target pool. In 2021, most space SPAC targets were pre-revenue concept companies valued on 2028 projections. A cohort of defense-adjacent space companies now has revenue, government customers, and unit economics that did not exist five years ago. That cohort is not, for the most part, the cohort choosing SPACs. <strong>Good companies do traditional IPOs.</strong> An S-1 is a harder document to write than a de-SPAC proxy, and that is the point. The discipline required to survive S-1 review is part of what builds durable investor trust on the other side. Companies that elect the SPAC path are telling you something about the traditional path they declined.</p>
+
+      <p><strong>What has not changed is the structure of the vehicle.</strong> A SPAC is a compromised way to take a company public. The sponsor earns a promoted return regardless of whether the deal performs. The trust runs a clock — typically 18 to 24 months — that pressures the sponsor to find a target whether or not the right target exists. The merger vote and the redemption right are structurally separated, which means the people approving the deal and the people taking cash off the table are often not the same people. And forward-looking statements in a de-SPAC proxy are protected by a safe harbor that does not apply to a traditional S-1. The projections carry less legal risk in a SPAC. They also carry less scrutiny.</p>
+
+      <p>A USSF supplier that walks through the de-SPAC door discloses material about future contract revenue, margin structure, and capability milestones that is almost always more aggressive than what the same company would put in an S-1. The forward projections become the story. The forward projections become the stock price. The forward projections become the pressure a newly public company faces every ninety days.</p>
+    </div>
+
+    <div class="callout">
+      <div class="callout-label">Four questions before you trust a de-SPAC'd supplier</div>
+      <p><strong>Sponsor track record.</strong> Has this sponsor taken a company public before? What happened after? A sponsor whose prior deal is trading at twenty cents on the dollar is not the same as one with a book of completed, still-intact deals. <strong>Trust and PIPE composition.</strong> A PIPE anchored by defense primes, sovereign wealth, and committed long-term capital signals one thing. A PIPE filled with crossover hedge funds and retail vehicles signals another. <strong>Target readiness for public-company cadence.</strong> Does the CFO have public-company experience? Are SOX controls in place now — not slated for after close? A company that has never published audited quarterly financials is not ready for the first one in ninety days. <strong>Use of proceeds.</strong> Is the cash funding product, manufacturing, and delivery against contracted backlog — or is a meaningful share flowing to insider secondary, sponsor promote, and advisor fees? Read the proxy.</p>
+    </div>
+
+    <div class="brief-body">
+      <p>The forensic read is that the wrapper choice is itself part of the signal. A company with eighteen months of contracted revenue, a Tier 1-or-2 cap table, audited financials, and a CFO who has filed a 10-K before can raise at a fair mark in a traditional IPO. When that same company chooses a SPAC instead, something else is in the trade — a valuation the public market would not give it on its own, a timeline that will not survive a roadshow, or a disclosure posture that would not survive an S-1's liability regime. <strong>The companies using SPACs well are the exception. The rule is that good companies do traditional IPOs.</strong></p>
+
+      <p>For acquisition officers, here is what changes. A supplier that becomes a public company now has to disclose material changes in customer concentration, contract losses, cyber incidents, export-control exposure, and executive departures on fast reporting timelines. That is useful intelligence when the architecture depends on continued delivery from that supplier. It is also the beginning of quarterly earnings pressure. Programs that rely on steady capability maturation do not always survive contact with a public-market shareholder base that wants top-line growth every ninety days. Both things are true at once.</p>
+
+      <p>The SPAC window is open. That alone is a warning. A supplier choosing a de-SPAC over a traditional IPO is making a statement about the road it did not walk. The Financial Confidence Level framework (<a href="../issue-003/" style="color:var(--copper); text-decoration:underline;">covered in Issue 003</a>) applies either way — and the wrapper choice is now part of the diligence file, not outside it. Read the company. Read the wrapper. Both.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════ MECHANICS PRIMER -->
+<section id="mechanics" class="mechanics-section">
+  <div class="mechanics-inner">
+    <div class="divider" style="margin-top:0; padding-top:40px;">
+      <span class="divider-label">Mechanics — SPAC vs. IPO</span>
+      <span class="divider-line"></span>
+    </div>
+
+    <p class="mechanics-intro">A SPAC is a public-company wrapper with moving parts a traditional IPO does not have. For readers who work the acquisition side rather than the capital markets side, the vocabulary matters — <strong>the same three letters (share, unit, warrant) describe very different instruments, and the structural features below are what the sponsor and the arbitrage community are actually trading.</strong></p>
+
+    <div class="mechanics-grid">
+      <div class="mechanics-card">
+        <div class="mechanics-label">Unit</div>
+        <p>What the SPAC actually sells at IPO — usually at <em>$10.00</em>. A unit is a bundle: one common share plus a fraction of a warrant (typically one-half or one-third). Units trade under a ticker with a "U" suffix (e.g., SPAC<em>U</em>) until roughly <em>52 days</em> post-IPO, at which point the share and the warrant separate and trade individually. A traditional IPO sells only common shares. There are no units.</p>
+      </div>
+
+      <div class="mechanics-card">
+        <div class="mechanics-label">Share (Common)</div>
+        <p>Ordinary common stock in the SPAC. Before the merger closes, each share is backed by the <em>$10.00 in trust</em>, which functions as a floor — the share rarely trades below it. After the merger (the "de-SPAC"), the trust is gone and the share trades on the operating business alone. The $10 floor disappears the moment the deal closes.</p>
+      </div>
+
+      <div class="mechanics-card">
+        <div class="mechanics-label">Warrant</div>
+        <p>A separately tradeable right to buy one common share at a fixed strike — almost always <em>$11.50</em> — for up to five years after the merger. Warrants have no floor and can trade well below a dollar. This is where the asymmetric return in a SPAC actually lives: the share is capped by the trust, the warrant is not.</p>
+      </div>
+
+      <div class="mechanics-card">
+        <div class="mechanics-label">Redemption Right</div>
+        <p>Before the merger vote, every public shareholder has the right to redeem their share for the cash in trust — roughly $10, plus accrued interest — regardless of how they vote. The mechanic that makes SPACs structurally strange: an investor can <em>vote yes on the merger and still take cash off the table</em>, while keeping the warrants. Free option. No equivalent exists in an IPO.</p>
+      </div>
+
+      <div class="mechanics-card">
+        <div class="mechanics-label">6-Month Lock-up</div>
+        <p>Sponsors, founders, and insiders are typically locked up for six months post-merger. <em>Public unit buyers and PIPE investors generally are not.</em> The common pattern: sell the share on day one at whatever the post-merger market will pay, keep the warrant as the long-dated option. This is the mechanical reason de-SPAC stocks see violent first-week price action and float churn that an IPO lock-up structure suppresses.</p>
+      </div>
+
+      <div class="mechanics-card">
+        <div class="mechanics-label">Safe Harbor Projections</div>
+        <p>Forward-looking financial projections in a de-SPAC proxy are protected by the <em>PSLRA safe harbor</em>. The same projections in a traditional S-1 are not — they carry direct issuer liability. This is the single most important structural difference for the reader. It is the reason de-SPAC projections are materially more aggressive than IPO roadshow numbers. The projections carry less legal risk. They also carry less discipline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ RAISE -->
+<section id="raise" class="raise-section">
+  <div class="raise-section-inner">
+    <div class="divider" style="margin-top:0; padding-top:40px;">
+      <span class="divider-label">Raise</span>
+      <span class="divider-line"></span>
+    </div>
+
+    <div class="raise-table-wrap">
+      <table class="raise-table">
+        <thead>
+          <tr>
+            <th style="width:22%">Company</th>
+            <th class="hide-mobile" style="width:16%">Vehicle</th>
+            <th style="width:14%">Value</th>
+            <th style="width:20%">Lead · Date</th>
+            <th style="width:28%">Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="company-name">Turion Space</div>
+              <div class="company-sub">Orbital Intelligence · SDA</div>
+            </td>
+            <td class="round-cell hide-mobile">Series B</td>
+            <td class="amount-cell">$75M+</td>
+            <td class="note-cell">Washington Harbour Partners · Apr 15, 2026</td>
+            <td class="note-cell">Scales satellite production and the Starfire mission software platform. Founders out of SpaceX, Lockheed Skunk Works, Boeing Phantom Works, with executives added from Palantir. One of fourteen vendors on the Space Force's recent space-based space domain awareness IDIQ. The company is executing against the exact architecture the USSF is now buying.</td>
+          </tr>
+          <tr class="alt-row">
+            <td>
+              <div class="company-name">Starfish Space</div>
+              <div class="company-sub">On-Orbit Servicing</div>
+            </td>
+            <td class="round-cell hide-mobile">Series B</td>
+            <td class="amount-cell">$100M+</td>
+            <td class="note-cell">Point72 Ventures · Apr 7, 2026</td>
+            <td class="note-cell">Activate Capital and Shield Capital co-led, with Industrious Ventures and NightDragon. Proceeds scale the Otter business line to execute the $52.5M Space Development Agency end-of-life satellite disposal contract signed in January and the recently announced $37.5M STRATFI for augmented-maneuver missions. Customer pull is now funding the manufacturing build-out.</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="company-name">Citra Space</div>
+              <div class="company-sub">Space Object Identification</div>
+            </td>
+            <td class="round-cell hide-mobile">Series A</td>
+            <td class="amount-cell">$15M</td>
+            <td class="note-cell">Washington Harbour Partners · Apr 13, 2026</td>
+            <td class="note-cell">Colorado Springs. Founded in 2024 by former USSF and Air Force officers with backgrounds in space domain awareness and orbital warfare. Merges multiple independent data sources into persistent object "fingerprints." The gap it addresses: of the roughly 35,000 objects currently tracked in orbit, operators still lack context on the identity of approximately 10,000. Same lead fund as Turion, two days apart.</td>
+          </tr>
+          <tr class="alt-row">
+            <td>
+              <div class="company-name">HawkEye 360</div>
+              <div class="company-sub">RF Signals Intelligence</div>
+            </td>
+            <td class="round-cell hide-mobile">S-1 Filed · NYSE "HAWK"</td>
+            <td class="amount-cell">IPO</td>
+            <td class="note-cell">Goldman, Morgan Stanley · Apr 10, 2026</td>
+            <td class="note-cell">$117.7M 2025 revenue, up from $67.6M. Net income of $48,000 against a prior-year net loss of $31.2M — the transition across the profitability line, not profitability at scale. U.S. government work is 61% of revenue. 30 satellites operating in clusters of three for RF geolocation. Up to $15M of proceeds earmarked for the deferred payment on the Innovative Signal Analysis acquisition announced in December.</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="company-name">Arxis</div>
+              <div class="company-sub">Aerospace &amp; Defense Components</div>
+            </td>
+            <td class="round-cell hide-mobile">IPO · NASDAQ "ARXS"</td>
+            <td class="amount-cell">$1.13B</td>
+            <td class="note-cell">Goldman, Morgan Stanley, Jefferies · Apr 15, 2026</td>
+            <td class="note-cell">Arcline-backed. Priced 40.5M shares at $28 — the top of range, upsized from initial filing. First-day close at $38.75, up 38.4%. Electronic and mechanical components for aerospace, defense, medical tech, and specialty industrial. Not a new-space story. An established component supplier whose public-market reception signals how much defense-tailored institutional capital is currently available.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ SCAN + SIDEBAR -->
+<div id="scan" class="body-wrap">
+  <div class="body-inner">
+
+    <!-- MAIN / SCAN -->
+    <main class="main-col">
+      <div class="divider" style="margin-top:0;">
+        <span class="divider-label">Scan</span>
+        <span class="divider-line"></span>
+      </div>
+
+      <article class="scan-item">
+        <h2 class="scan-headline">Washington Harbour Partners presses harder into USSF-aligned space</h2>
+        <p class="scan-body">The fund led Turion Space's $75M+ Series B on April 15 and Citra Space's $15M Series A on April 13 — two deals in 48 hours, both in the space domain awareness and orbital intelligence thesis, both with companies whose leadership teams carry direct USSF or acquisition operational experience. These rounds are not an isolated week. Washington Harbour has been aggressively building a space portfolio directly aligned with USSF requirements — prior investments include Apex Space, Northwood Space, and others operating inside the same mission architecture. <strong>When a single fund is taking the lead position across multiple companies operating in the same mission set, the cap tables of those companies now share a concentrated view on how that mission set should be built.</strong> For program officers planning architecture against SDA and orbital intelligence requirements, knowing who sits at the board level on the companies you are buying from is part of the diligence file, not a footnote.</p>
+      </article>
+
+      <article class="scan-item">
+        <h2 class="scan-headline">Kratos wins $446.8M OTA for Resilient Missile Warning ground integration</h2>
+        <p class="scan-body">Space Systems Command awarded Kratos Defense an Other Transaction Agreement with a total potential value of $446.8M to serve as the system integrator for the Resilient Missile Warning and Missile Tracking Ground Management & Integration program. Kratos is leading a team that includes Northrop Grumman, Auria, ASRC Federal Systems Solutions, and Rise8. <strong>This is the mature-program counterpoint to the new-space financing stories dominating the week.</strong> The contract structure — OTA, system-integrator-led, named teammates — is how SSC is now routinely executing against resilient missile warning requirements. A meaningful share of the FY26 space acquisition ledger will move through awards that look like this one, not through STRATFI transitions or de-SPAC'd suppliers.</p>
+      </article>
+
+      <article class="scan-item">
+        <h2 class="scan-headline">Lockheed's NG-OPIR Geosynchronous program crosses $8.2B cumulative</h2>
+        <p class="scan-body">On April 13, the Air Force added a $68.6M cost-plus-incentive-fee modification to Lockheed Martin Space's Next Generation Overhead Persistent Infrared Geosynchronous contract, bringing cumulative face value to $8,226,409,672. The modification is unremarkable in dollar terms against the new-space headlines — but the cumulative figure is the number worth carrying. <strong>Eight billion dollars is the scale of sustained programmatic investment in a single line of overhead persistent infrared capability.</strong> Any comparison between new-entrant proposed capability and the installed base has to start with the cumulative. The installed base keeps compounding while the discussion happens.</p>
+      </article>
+
+      <article class="scan-item">
+        <h2 class="scan-headline">HawkEye 360 files S-1 for a traditional IPO</h2>
+        <p class="scan-body">On April 10, HawkEye 360 filed an S-1 with the SEC for a traditional listing on the New York Stock Exchange under the proposed ticker HAWK. The filing reports $117.7M in 2025 revenue — up from $67.6M the year prior — with 61 percent of it from U.S. government contracts. Revenue concentration, capital intensity, international footprint, and the mechanics of the RF geolocation business are all disclosed in the document. <strong>This is what the disciplined public-market path looks like for a defense-adjacent space company — S-1 review, underwriter diligence, and issuer liability on the forward statements.</strong> That a company of HawkEye 360's size and government-contract profile is doing this the traditional way, rather than reverse-merging into a SPAC, is its own signal about what the company expects the scrutiny of public shareholders to look like.</p>
+      </article>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="side-col">
+
+      <div class="side-widget">
+        <div class="side-label">Market Pulse</div>
+        <div class="pulse-grid">
+          <div class="pulse-tile">
+            <span class="pulse-num">$230M</span>
+            <span class="pulse-label">Space Asset Acquisition Corp Trust — Listed Jan 2026</span>
+          </div>
+          <div class="pulse-tile">
+            <span class="pulse-num">24 mo</span>
+            <span class="pulse-label">SPAC Clock — Merger or Redemption</span>
+          </div>
+          <div class="pulse-tile">
+            <span class="pulse-num">$117.7M</span>
+            <span class="pulse-label">HawkEye 360 FY25 Revenue · Up 74% YoY</span>
+          </div>
+          <div class="pulse-tile">
+            <span class="pulse-num">61%</span>
+            <span class="pulse-label">HawkEye 360 Government Revenue Concentration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-widget">
+        <div class="side-label">Capital Angle</div>
+        <p class="capital-angle">"Good companies do traditional IPOs. When a space company picks a SPAC over an S-1, the wrapper choice is the first piece of diligence — not the last."</p>
+      </div>
+
+      <div class="side-widget">
+        <div class="side-label">SPAC vs. Traditional IPO — At a Glance</div>
+        <div style="font-size:14px; line-height:1.75; color:var(--mid);">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px;">
+            <div style="background:var(--sand); padding:12px; text-align:center;">
+              <div style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--copper); margin-bottom:6px;">Traditional IPO</div>
+              <div style="color:var(--mid); font-size:13px; line-height:1.6;">S-1 review · 6–12 months · Forward projections outside safe harbor · Underwriter diligence · Lock-ups standard</div>
+            </div>
+            <div style="background:var(--linen); padding:12px; text-align:center;">
+              <div style="font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--copper); margin-bottom:6px;">De-SPAC</div>
+              <div style="color:var(--mid); font-size:13px; line-height:1.6;">Merger proxy · 3–6 months · Projections inside safe harbor · Sponsor + PIPE diligence · Redemption right at close</div>
+            </div>
+          </div>
+          <p style="font-size:13px; color:var(--driftwood); font-style:italic;">Projections in a de-SPAC proxy carry less legal exposure than the same statements in an S-1. Read them accordingly.</p>
+        </div>
+      </div>
+
+      <div class="side-widget">
+        <div class="side-label">IPO Watch</div>
+        <div class="ipo-item">
+          <div class="ipo-name">Arxis</div>
+          <div class="ipo-status">Trading · NASDAQ: ARXS · +38% Day One</div>
+        </div>
+        <div class="ipo-item">
+          <div class="ipo-name">HawkEye 360</div>
+          <div class="ipo-status">S-1 Filed · NYSE: HAWK · Apr 10, 2026</div>
+        </div>
+        <div class="ipo-item">
+          <div class="ipo-name">Space Asset Acquisition Corp</div>
+          <div class="ipo-status">SPAC · Nasdaq · 24-Month Merger Clock</div>
+        </div>
+        <div class="ipo-item">
+          <div class="ipo-name">SpaceX</div>
+          <div class="ipo-status">S-1 Confidential · Road show Q3 2026</div>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- ════════════════════════════════ BUILD -->
+<section id="build" class="build-section">
+  <div class="build-inner">
+    <div class="build-header">
+      <div class="section-tag" style="margin-bottom:0; color:var(--copper);">Build</div>
+      <div class="build-title">Reading a Space SPAC</div>
+      <div class="build-subtitle">Four questions that decide whether the vehicle is the story — or the company is</div>
+    </div>
+
+    <div class="build-grid">
+
+      <div class="build-card">
+        <div class="card-num">01</div>
+        <h3 class="card-headline">Sponsor Quality &amp; Track Record</h3>
+        <p class="card-body">The sponsor is the single most important variable in a SPAC. They select the target, negotiate the terms, set the valuation, and earn a promoted return — typically 20% of the post-merger equity — regardless of whether the deal performs. A sponsor whose prior SPAC completed a merger, traded above NAV post-close, and still trades intact today has earned a different baseline of trust than a first-time sponsor or one whose prior deal traded down 80%. <strong>The question to answer:</strong> How many deals has this sponsor closed, and where are those companies trading now? The answer is public. It takes ten minutes to find.</p>
+        <div class="card-takeaway">→ A sponsor's track record is the first filter. Nothing else matters if the first deal wasn't credible.</div>
+      </div>
+
+      <div class="build-card">
+        <div class="card-num">02</div>
+        <h3 class="card-headline">Trust Size &amp; PIPE Composition</h3>
+        <p class="card-body">The trust establishes the floor. A $230M trust sets a different deal scale than a $600M trust. More important is the PIPE — the private investment in public equity raised alongside the merger to fund the combined company. The PIPE is where strategic investors, sovereign wealth, and committed long-term capital either show up or don't. <strong>What to look at:</strong> Are PIPE participants defense primes, infrastructure funds, or recognized crossover institutional investors? Or is the PIPE composed largely of SPAC-arbitrage hedge funds and retail-oriented vehicles that will rotate out on day one? The first signals underwriting. The second signals a structural overhang.</p>
+        <div class="card-takeaway">→ Trust size is the floor. PIPE composition is the signal about who actually believes.</div>
+      </div>
+
+      <div class="build-card">
+        <div class="card-num">03</div>
+        <h3 class="card-headline">Target Readiness for Public-Company Cadence</h3>
+        <p class="card-body">A newly public company must publish audited quarterly financials, host earnings calls, maintain SOX-compliant internal controls, and disclose material events on an 8-K within four business days. That cadence is a different job than running a private company. <strong>The test:</strong> Does the CFO have prior public-company experience? Has the company been audited by a PCAOB-registered firm for the past two fiscal years? Are internal controls documented, or is the SOX program something that will be built after the merger? A target that is technically excellent and operationally strong can still fail in the first four quarters of public life if it is not ready for the reporting cadence. Failure in public-company reporting is one of the fastest ways for a defense supplier to lose institutional confidence.</p>
+        <div class="card-takeaway">→ Engineering maturity does not equal reporting maturity. Both have to be present on Day 1.</div>
+      </div>
+
+      <div class="build-card">
+        <div class="card-num">04</div>
+        <h3 class="card-headline">Use of Proceeds — Delivery vs. Insider Secondary</h3>
+        <p class="card-body">The proxy statement discloses where the cash goes. A clean proxy shows proceeds funding manufacturing expansion, working capital, R&amp;D against a contracted backlog, and debt paydown. A less clean proxy shows meaningful cash flowing to insider secondary — founders and early investors taking liquidity — and to sponsor promote and advisor fees. Both happen in almost every deal. The question is the ratio. <strong>When a meaningful share of de-SPAC cash goes to insider liquidity rather than business execution, the company emerges public with less operating capital than the headline number suggests.</strong> For any acquisition officer diligencing a supplier that is going public via SPAC, the proxy's use-of-proceeds table is the single most useful page in the filing.</p>
+        <div class="card-takeaway">→ The headline is how much was raised. The reality is how much the company actually keeps.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ POSITION -->
+<section id="position" class="position-section">
+  <div class="position-inner">
+    <div class="section-tag" style="color:var(--copper); margin-bottom:28px;">Position</div>
+    <p class="position-body">The same week that a SPAC sponsor who abandoned a space deal in 2022 has roughly $230 million in a 2026 trust looking for a target, three private companies — Turion, Starfish, and Citra — closed rounds that make clear the private market is still doing the real work of underwriting space capability. HawkEye 360 filed a traditional S-1 — the disciplined path — on the same week. Arxis proved that institutional capital will pay the top of the range for a real aerospace and defense business through a real IPO. <strong>The public-market door is open, and the door itself tells you something. A SPAC is not the same invitation as an S-1. The companies that can file the harder document, do. The wrapper choice of the ones that cannot is not a footnote — it is the first line of the diligence.</strong></p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">High Ground</div>
+    <div class="footer-meta">
+      <p>Issue 004 · April 17, 2026</p>
+      <p>Defense · Space · Capital Markets</p>
+      <p>InterVallo LLC · Jennifer Ross</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
