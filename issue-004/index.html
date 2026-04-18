@@ -113,6 +113,22 @@
     line-height: 2;
   }
 
+  .masthead-avatar {
+    width: clamp(72px, 8vw, 110px);
+    height: clamp(72px, 8vw, 110px);
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+    border: 2px solid rgba(160,113,79,0.5);
+    flex-shrink: 0;
+  }
+
+  .masthead-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 2.5vw, 28px);
+  }
+
   .week-tag {
     display: inline-block;
     background: var(--copper);
@@ -892,6 +908,15 @@
   @media (max-width: 480px) {
     html { font-size: 15px; }
 
+    .masthead-avatar {
+      width: 64px;
+      height: 64px;
+    }
+
+    .masthead-right {
+      gap: 16px;
+    }
+
     .mechanics-intro {
       font-size: 18px;
     }
@@ -953,10 +978,13 @@
         <div class="brand-tagline">Defense · Space · Capital Markets</div>
         <div class="week-tag">The Public-Market Turn</div>
       </div>
-      <div class="issue-meta">
-        <p>Issue 004</p>
-        <p>April 17, 2026</p>
-        <p>InterVallo LLC</p>
+      <div class="masthead-right">
+        <div class="issue-meta">
+          <p>Issue 004</p>
+          <p>April 17, 2026</p>
+          <p>InterVallo LLC</p>
+        </div>
+        <img class="masthead-avatar" src="../jennifer-avatar.png" alt="Jennifer Ross">
       </div>
     </div>
     <nav class="masthead-nav">
